@@ -1,0 +1,424 @@
+* {
+	box-sizing: border-box;
+}
+
+
+
+font-family: 'Lato', sans-serif;
+
+body {
+	margin: 0;
+/*
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
+*/
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+
+.italic {
+	font-style: italic;
+	font-family: 'Droid Serif', serif;
+	font-size: 0.8em;
+}
+/* Menu NAV - START */
+
+		/* Tło Menu Nav */
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;	
+}
+
+		/*Font Brandu*/
+.navbar-default .navbar-brand{
+	font-family: 'Droid Serif', serif;
+	color: white;
+	font-style: italic;
+	transition: all .5s;
+}
+
+.navbar-default .navbar-brand:hover{
+	color: #dd9933;
+}
+
+.navbar-default .navbar-brand:focus{
+	color: #FFF;
+}
+
+		/*  Font Menu */
+.navbar-default .navbar-nav>li>a {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-weight: bold;
+	transition: all .5s;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #dd9933;
+}
+.navbar-default .navbar-nav>li>a:focus {
+	color: #FFF;
+}
+
+		/*	 Menu nav - Scroll	*/
+.navbar-default.scroll {
+	background-color: rgba(221,153,51,0.85);
+	border-color: transparent;
+}
+
+		/* Font Brandu - SCROLL */
+.navbar-default.scroll .navbar-brand{
+	color: white;
+	transition: all .5s;
+}
+
+.navbar-default.scroll .navbar-brand:hover{
+	color: #333333;
+}
+
+		/*  Font Menu - SCROLL */
+.navbar-default.scroll .navbar-nav>li>a {
+	transition: all .5s;
+	color: white;
+}
+
+.navbar-default.scroll .navbar-nav>li>a:hover {
+	color: #333333;
+}
+
+/* Menu NAV - END */
+
+
+/* Header START */
+
+#main-header {
+	position: relative;
+	height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/header/kociolek-glowne.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+}
+
+.header-text {
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #FFF;
+}
+
+#main-header h2 {
+	font-weight:normal;
+}
+
+.btn {
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	transition: all .5s;
+	background-color:  #dd9933;
+}
+
+.btn:hover {
+	background-color: white;
+	color: #dd9933;
+}
+#main-header .btn:focus {
+	outline: 0;
+}
+
+/* Header END */
+
+
+/* Services - START*/
+
+#services {
+	text-align: center;
+	width: 100%;
+	padding-top: 50px;
+}
+
+#services .row{
+	margin-bottom: 50px;
+}
+
+#services i {
+	font-size: 3em;
+	background-color: #dd9933;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	color: white;
+	line-height: 80px;
+	border: 1px solid #FFF;
+	transition: all .5s;
+}
+
+#services i:hover {
+	background-color: #FFF;
+	color: #dd9933;
+	border: 1px solid #dd9933;
+}
+
+/* Services - END */
+
+/* Portfolio - START */
+
+#portfolio {
+	background-color: #f7f7f7;
+	text-align: center;
+	width: 100%;
+	padding-top: 50px;
+/*	margin-bottom: 50px;*/
+}
+
+.portfolio-box {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #FFF;
+}
+
+#portfolio .portfolio-box .portfolio-items {
+	margin-top: 25px;
+}
+
+#portfolio .portfolio-box .portfolio-items .overflow-box {
+	overflow: hidden;
+}
+
+#portfolio .container .portfolio-box .portfolio-items h4 {
+	margin-top:20px;
+}
+
+#portfolio .container .portfolio-box .img {
+	position: relative;
+	height:  250px;
+	font-size: initial;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	color: #fff;
+	transition-duration: 1s;
+}
+
+#portfolio .container .portfolio-box .img:hover {
+	transform: scale(1.5);
+}
+
+#portfolio #img1 {
+	background-image: url(img/Menu/6.jpg);
+}
+
+#portfolio #img2 {
+	background-image: url(img/Menu/kotlet.jpg);
+}
+
+#portfolio #img3 {
+	background-image: url(img/Menu/beef.jpg);
+}
+
+#portfolio #img4 {
+	background-image: url(img/Menu/ribs.jpg);
+}
+
+#portfolio #img5 {
+	background-image: url(img/Menu/dumplings.jpg);
+}
+
+#portfolio #img6 {
+	background-image: url(img/Menu/food-dinner-lemon-rice.jpg);
+}
+
+#portfolio .img .portfolio-mask {
+	position: absolute;
+	background-color: rgba(221,153,51,0.6);
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all .5s;
+}
+
+#portfolio .img .portfolio-mask:hover {
+	opacity:  1;
+}
+#portfolio .img .portfolio-mask .portfolio-inner {
+	position: absolute;
+    top: 50%;
+	transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+	font-size: 3em;
+}
+
+#portfolio .img .portfolio-mask .portfolio-inner a {
+	color: #FFF;
+	transition: all .5s;
+}
+
+#portfolio .img .portfolio-mask .portfolio-inner a:hover {
+	font-size:  1.2em;
+}
+
+/* Portfolio - END */
+
+/* TEAM - START */
+
+#team {
+	text-align: center;
+	width: 100%;
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+
+#team .team-box {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#team .team-box .team-img {
+	position: relative;
+	max-height:  230px;
+	font-size: initial;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+
+#team .team-box .fa {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	color: #FFF;
+	background-color: black;
+	text-align: center;
+	line-height: 40px;
+	border: 1px solid #FFF;
+	transition: all .5s;
+}
+
+#team .team-box .fa:hover {
+	background-color: #dd9933;
+}
+
+/* TEAM - END */
+
+/* Contact - START */
+
+#contact {
+/*	height: 100vh;*/
+	position: relative;
+	text-align: center;
+	width: 100%;
+	padding-top: 100px;
+/*	margin-bottom: 100px;*/
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/footer/world-map.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+#contact .contact-title {
+	color: #FFF;
+}
+
+#contact .formularz {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+#contact .formularz #personal{
+	height: 100%;	
+}
+
+#contact .formularz #personal .form-text {
+	width: 100%;
+	margin-top: 35px;
+	padding: 15px;
+	border-radius: 5px;
+	border: none;
+}
+
+#contact .formularz #personal .form-text:focus {
+	outline: 0;
+}
+
+#contact .formularz #message {
+	margin-top: 35px;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	padding: 15px;
+}
+
+#contact .formularz #message:focus {
+	outline: 0;
+}
+
+#contact .formularz .btn {
+	margin-top: 35px;
+}
+
+#contact .formularz .btn:focus {
+	outline: 0;
+}
+/* Contact - END */
+
+/* Footer - START */
+
+#footer {
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+#footer .social .fa {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	color: #FFF;
+	background-color: black;
+	text-align: center;
+	line-height: 40px;
+	border: 1px solid #FFF;
+	transition: all .5s;
+}
+
+#footer .social .fa:hover {
+	background-color: #dd9933;
+}
+
+#footer p {
+	font-family: 'Roboto Slab', serif;
+/*	font-size: 12px;*/
+	color: black;
+}
+
+#footer a {
+	font-family: 'Roboto Slab', serif;
+	color: black;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+#footer a:hover {
+	color: #dd9933;
+}
+
+/* Footer - END */
