@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>Restauracja Kociolek</title>
+	
+		<!-- Czcionki -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+	
+		<!--	Pozostałe Font	-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<!--  Menu Font	-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<!--  Pochylone Font	-->
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+	<!-- |Montserrat -->
+	<script src="https://use.fontawesome.com/749c207dec.js"></script>
+   
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    
+	<link rel="stylesheet" href="style.css">
+	<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3_cS8xoqzjuWh09_7pnk1PK5AfTB6Hws&callback=initMap"
+  type="text/javascript"></script>
+	
+  </head>
+  <body>
+  
+  <!--Menu nawigacyjne - START-->
+  
+ <nav class="navbar navbar-default navbar-fixed-top"> 
+  <div class="container-fluid">
+    <!-- Nazwa i odnośnik na początek -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Wróć do strony głównej</a>
+    </div>
+    <!-- Odnośniki Menu-nav -->
+    <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#services">O Nas</a></li>
+        <li><a href="#catering">Oferta</a></li>
+        <li><a href="#team">Mapa</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+   <!--Menu nawigacyjne - KONIEC -->
+ 
+<!-- Header START -->
+ 
+ <header id="main-header">
+		<div class="header-text">
+			<div id="header-logo"></div>
+			<h1 class="text-uppercase">Organizacja imprez okolicznościowych z Kociołkiem</h1>
+			<h2 class="text-lowercase text-capitalize">Chcesz zorganizować przyjęcie? Zadzwoń i dowiedz się więcej: tel. kom. 608 138 608, tel. 14 612 34 70</h2>
+			<button name="#catering" class="btn btn-info btn-lg" id="submit-header" type="submit">Szczegóły</button>
+		</div>
+ </header>
+ 
+<!-- Header END -->
+  
+  <section id="services">
+  	<div class="container">
+  		<div class="row">
+  			<h2 class="text-uppercase">O Nas</h2>
+  			<p class="italic">Kociołek jest restauracją działającą na terenie Centrum Handlowego Sanit. Polecamy dania kuchni polskiej oraz naszą specjalność - dania serwowane w kociołku <br>
+  			Zachęcamy do zapoznania się z naszą ofertą:</p>
+  		</div>
+  		<div class="row">
+  			<div class="col-md-4">
+  				<i class="fa fa-truck" aria-hidden="true"></i>
+  				<h4>Dowóz</h4>
+  				<p class="italic">Dostarczamy posiłki na terenie całej Bochni...</p>
+  			</div>
+  			<div class="col-md-4">
+  				<i class="fa fa-cutlery" aria-hidden="true"></i>
+  				<h4>Catering</h4>
+  				<p class="italic">W pobliżu Twojej firmy brakuje miejsca gdzie możnaby zjeść? Zgłoś się do Nas, a my zapewnimy codzienny dowóz świeżych, ciepłych posiłków!</p>
+  			</div>
+  			<div class="col-md-4">
+  				<i class="fa fa-birthday-cake" aria-hidden="true"></i>
+  				<h4>Imprezy okolicznościowe</h4>
+  				<p class="italic">Organizacja wesela, komunii czy urodzin? To dla Nas żaden problem!</p>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+  
+  <!-- Catering info - START -->
+  
+  <section id="catering">
+  	<div class="container">
+  		<div class="row">
+  			<h2>Organizacja imprez</h2>
+  			<p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eveniet officiis a harum dolorem, odit, reprehenderit porro, architecto dicta facere tempore voluptate vel amet nemo accusantium quibusdam quae inventore in.  Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolore voluptate, quia magnam doloremque fuga dicta ratione facere nesciunt perferendis dolorem laboriosam, soluta. Voluptas nam molestias deserunt recusandae, molestiae provident?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam vitae ab quis voluptatum, minima natus quasi, atque adipisci iusto voluptate dolor optio, doloribus non veniam provident laudantium praesentium consectetur temporibus. </p>
+  		</div>
+  	</div>
+  	
+  	
+  	
+  </section>
+  
+  
+  <!-- Catering info - END -->
+ 
+<!-- TEAM - START -->
+ 
+ <section id="team">
+	 <!--<div class="container">
+		<div class="row">
+			<div class="map">Miejsce na mapę</div>
+			
+		</div>
+	 </div>-->
+	 <div id="map"></div>
+	 
+ 	
+ 	<!--<div class="container">
+		<div class="row">
+			<h2>Meet our team</h2>
+			<p class="italic">This is our team.</p>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-12 team-box">
+				<img class="team-img" src="img/team/man-1.jpg" alt="Typ">
+				<div>
+					<h4>Imię nazwisko</h4>
+					<p class="italic">Acount Menager</p>
+				</div>
+				<div>
+					<a href="http://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="http://linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 team-box">
+				<img class="team-img" src="img/team/man-2.jpg" alt="Typ">
+				<div>
+					<h4>Imię nazwisko</h4>
+					<p class="italic">Developer</p>
+				</div>
+				<div>
+					<a href="http://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="http://linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 team-box">
+				<img class="team-img" src="img/team/woman-1.jpg" alt="Typ">
+				<div>
+					<h4>Imię nazwisko</h4>
+					<p class="italic">Project Menager</p>
+				</div>
+				<div>
+					<a href="http://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="http://linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				</div>
+			</div>
+
+		</div>
+		<div class="row">
+			<p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis architecto beatae alias hic eaque, dicta harum, ad commodi autem praesentium voluptates! Assumenda suscipit qui, distinctio facilis dicta, delectus quasi.</p>
+		</div>
+ 	</div>-->
+ </section>
+ 
+ 
+ <!-- TEAM - END -->
+ 
+ 
+<!-- Contact - START -->
+ 
+ <section id="contact">
+ 	<div class="container">
+ 		<div class="row contact-title">
+ 			<h2>Jesteś zainteresowany zorganizowaniem imprezy?</h2>
+ 			<p class="italic">Zadzwoń lub napisz:</p>
+ 		</div>
+ 		<div class="row">
+			<form class="formularz" method="post" action="//formspree.io/kontokamilsiwek@gmail.com">
+				<div id="personal" class="col-md-6">
+					<input class="form-text" type="text" name="name" placeholder="Imię i Nazwisko">
+					<input class="form-text" id="email" type="email" name="email" placeholder="E-mail">
+					<input class="form-text" type="tel" name="tel" placeholder="Numer telefonu">
+				</div>
+				<div class="col-md-6">
+					<textarea name="message" id="message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+				</div>
+				<input class="btn btn-info btn-lg" id="send" type="submit" value="Wyślij wiadomość">
+			</form>	
+ 		</div>
+ 	</div>
+ </section>
+ 
+ <footer id='footer'>
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-md-4">
+ 				<p>Copyright &copy; Your Website</p>
+ 			</div>
+ 			<div class="col-md-4 social">
+ 				<a href="http://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="http://linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+ 			</div>
+ 			<div class="col-md-4">
+ 				<a href="#">Privacy Policy</a>
+ 				<a href="#">Term of use</a>
+ 			</div>
+ 		</div>
+ 	</div>
+ </footer>
+ 
+ 
+<!-- Contact - END -->
+  
+    <script src="jquery-3.2.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
