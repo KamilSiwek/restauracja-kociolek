@@ -331,6 +331,12 @@ h1, h2, h3, h4 {
 
 #team .team-box .fa:hover {
 	background-color: #dd9933;
+	
+}
+
+#team .map {
+	background-image: url(img/map.png);
+	height: 40vh;
 }
 
 /* TEAM - END */
