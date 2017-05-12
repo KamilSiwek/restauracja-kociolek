@@ -25,7 +25,7 @@
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     
 	<link rel="stylesheet" href="style.css">
-	
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
   </head>
   <body>
   
@@ -74,7 +74,7 @@
   	<div class="container">
   		<div class="row">
   			<h2 class="text-uppercase">O Nas</h2>
-  			<p class="italic">Kociołek jest nową restauracją działającą na terenie Centrum Handlowego Sanit. Polecamy dania kuchni polskiej oraz naszą specjalność - dania serwowane w kociołku <br>
+  			<p class="italic">Kociołek jest restauracją działającą na terenie Centrum Handlowego Sanit. Polecamy dania kuchni polskiej oraz naszą specjalność - dania serwowane w kociołku <br>
   			Zachęcamy do zapoznania się z naszą ofertą:</p>
   		</div>
   		<div class="row">
@@ -130,7 +130,7 @@
 				</div>
 				<h4>Kotlet schabowy</h4>
 				<p class="italic">
-					Podawany z frytkami i zestawem surówek - 16,50 zł
+					Z frytkami i zestawem surówek - 16,50 zł
 					
 				</p>
 			</div>
@@ -143,7 +143,7 @@
 					</div>
 				</div>
 				<h4>Rumsztyk wołowy</h4>
-				<p class="italic">Podawany z cebulką i pieczarkami podawany z ziemniakami zasmażanymi oraz zestawem surówek 16
+				<p class="italic">Z cebulką i pieczarkami podawany z ziemniakami zasmażanymi oraz zestawem surówek 16
 				</p>
 			</div>
 			<div class="col-md-4 portfolio-items">
@@ -155,7 +155,7 @@
 					</div>
 				</div>
 				<h4>Żeberka w marynacie miodowo-musztardowej</h4>
-				<p class="italic">Podawane na kiszonej kapuście z zasmażanymi ziemniakami 17 zł   </p>
+				<p class="italic">Na kiszonej kapuście z zasmażanymi ziemniakami 17 zł   </p>
 				
 			</div>
 			<div class="col-md-4 portfolio-items">
@@ -179,7 +179,7 @@
 					</div>
 				</div>
 				<h4>Grillowany łosoś</h4>
-				<p class="italic">podawany z frytkami oraz zestawem surówek 23 zł</p>
+				<p class="italic">Z frytkami oraz zestawem surówek 23 zł</p>
 			</div>
 		</div>
 	</div>
@@ -190,11 +190,13 @@
 <!-- TEAM - START -->
  
  <section id="team">
-	 <div class="container">
+	 <!--<div class="container">
 		<div class="row">
 			<div class="map">Miejsce na mapę</div>
+			
 		</div>
-	 </div>
+	 </div>-->
+	 <div id="map" style="width: 100%; height: 40vh;"></div>
  	
  	<!--<div class="container">
 		<div class="row">

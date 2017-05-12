@@ -89,3 +89,23 @@ function warning(event) {
 document.getElementById('send').onclick = warning;
 
 /* Formularz - pola wymagane - END */
+
+/* Google map - START */
+
+    	var map;
+        var lat=49.9785016;
+        var lng=20.4291841;
+        var zoom=17;
+ 
+        function initialize() {
+            var myOptions = {
+                zoom: zoom,
+                center: new google.maps.LatLng(lat, lng),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById('map'), myOptions);
+        }
+ 
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+/* Google map - END */
