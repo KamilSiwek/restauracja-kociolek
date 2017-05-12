@@ -460,3 +460,21 @@ body {
 	background-color: #736357;
 }
 /* Footer - END */
+
+
+
+
+
+
+/* Impreza  START */
+
+#party {
+	min-height: 50vh;
+	background-image: url(img/impreza/party.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+/* Impreza END */
