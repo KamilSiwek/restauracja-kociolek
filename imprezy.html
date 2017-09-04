@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
-   
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+
     <title>Restauracja Kociolek</title>
-	
+
 		<!-- Czcionki -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-	
+
 		<!--	Pozostałe Font	-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 		<!--  Menu Font	-->
@@ -20,21 +20,21 @@
 	<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 	<!-- |Montserrat -->
 	<script src="https://use.fontawesome.com/749c207dec.js"></script>
-   
+
     <!-- Bootstrap -->
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
 	<link rel="stylesheet" href="style.css">
 	<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3_cS8xoqzjuWh09_7pnk1PK5AfTB6Hws&callback=initMap"
   type="text/javascript"></script>
-	
+
   </head>
   <body>
-  
+
   <!--Menu nawigacyjne - START-->
-  
- <nav class="navbar navbar-default navbar-fixed-top"> 
+
+ <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Nazwa i odnośnik na początek -->
     <div class="navbar-header">
@@ -57,11 +57,11 @@
     </div>
   </div>
 </nav>
- 
+
    <!--Menu nawigacyjne - KONIEC -->
- 
+
 <!-- Header START -->
- 
+
  <header id="main-header">
 		<div class="header-text">
 			<div id="header-logo"></div>
@@ -70,10 +70,10 @@
 			<button name="#party" class="btn btn-info btn-lg" id="submit-header" type="submit">Szczegóły</button>
 		</div>
  </header>
- 
+
 <!-- Header END -->
-  
-  <section id="services">
+
+   <section id="services">
   	<div class="container">
   		<div class="row">
   			<h2 class="text-uppercase">O Nas</h2>
@@ -87,48 +87,72 @@
   				<p class="italic">Dostarczamy posiłki na terenie całej Bochni...</p>
   			</div>
   			<div class="col-md-4">
-  				<i class="fa fa-cutlery" aria-hidden="true"></i>
+  				<a href="catering.html">
+  					<i class="fa fa-cutlery" aria-hidden="true"></i>
+  				</a>
+
   				<h4>Catering</h4>
   				<p class="italic">W pobliżu Twojej firmy brakuje miejsca gdzie możnaby zjeść? Zgłoś się do Nas, a my zapewnimy codzienny dowóz świeżych, ciepłych posiłków!</p>
   			</div>
   			<div class="col-md-4">
-  				<i class="fa fa-birthday-cake" aria-hidden="true"></i>
+  				<a href="imprezy.html">
+  					<i class="fa fa-birthday-cake" aria-hidden="true"></i>
+  				</a>
   				<h4>Imprezy okolicznościowe</h4>
   				<p class="italic">Organizacja wesela, komunii czy urodzin? To dla Nas żaden problem!</p>
   			</div>
   		</div>
   	</div>
   </section>
-  
-  <!-- Catering info - START -->
-  
-  <section id="party">
+
+  <!-- Party info - START -->
+
+  <section class="portfolio" id="party">
   	<div class="container">
-  		<div class="row">
-  			<h2>Organizacja imprez</h2>
-  			<p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eveniet officiis a harum dolorem, odit, reprehenderit porro, architecto dicta facere tempore voluptate vel amet nemo accusantium quibusdam quae inventore in.  Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolore voluptate, quia magnam doloremque fuga dicta ratione facere nesciunt perferendis dolorem laboriosam, soluta. Voluptas nam molestias deserunt recusandae, molestiae provident?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam vitae ab quis voluptatum, minima natus quasi, atque adipisci iusto voluptate dolor optio, doloribus non veniam provident laudantium praesentium consectetur temporibus. </p>
+
+  		<div class="row portfolio-box party-box">
+
+        <h2>Oferta imprez</h2>
+        <div>
+          <p>Zajmujemy się organizacją przyjęć okolicznościowych. W zakres usługi wchodzą:
+            <li>Klimatyzowana sala bankietowa  mieszcząca do 100 osób.</li>
+            <li>Parkiet taneczny</li>
+            <li>Sala konferencyjna</li>
+            <li>Hotel</li>
+            <li>Profesjonalny DJ</li>
+            <li>Usługi barmańskie</li>
+            <li>Transport gości</li>
+            <li>Organizacja dodatkowych atrakcji (zwiedzanie, paintball itp.).</li>
+          </p>
+          <p></p>
+        </div>
+  			<!-- <div class="portfolio-items">
+          <div>k</div> -->
+  				<!-- <div class="overflow-box">
+              <div>k</div>
+  				</div> -->
+
+  			<!-- </div> -->
   		</div>
   	</div>
-  	
-  	
-  	
   </section>
-  
-  
-  <!-- Catering info - END -->
- 
+
+
+
+  <!-- Party info - END -->
+
 <!-- TEAM - START -->
- 
+
  <section id="team">
 	 <!--<div class="container">
 		<div class="row">
 			<div class="map">Miejsce na mapę</div>
-			
+
 		</div>
 	 </div>-->
 	 <div id="map"></div>
-	 
- 	
+
+
  	<!--<div class="container">
 		<div class="row">
 			<h2>Meet our team</h2>
@@ -178,13 +202,13 @@
 		</div>
  	</div>-->
  </section>
- 
- 
+
+
  <!-- TEAM - END -->
- 
- 
+
+
 <!-- Contact - START -->
- 
+
  <section id="contact">
  	<div class="container">
  		<div class="row contact-title">
@@ -202,11 +226,11 @@
 					<textarea name="message" id="message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
 				</div>
 				<input class="btn btn-info btn-lg" id="send" type="submit" value="Wyślij wiadomość">
-			</form>	
+			</form>
  		</div>
  	</div>
  </section>
- 
+
  <footer id='footer'>
  	<div class="container">
  		<div class="row">
@@ -225,13 +249,13 @@
  		</div>
  	</div>
  </footer>
- 
- 
+
+
 <!-- Contact - END -->
-  
+
     <script src="jquery-3.2.0.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <script src="script.js"></script>
-    
+
   </body>
 </html>
